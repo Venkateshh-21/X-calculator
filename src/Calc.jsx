@@ -17,6 +17,11 @@ const Calc = () => {
     }
     const generateResult=(e)=>{
         e.preventDefault()
+        if (val.trim() === "") {
+      setError(true);
+      setDisplayResult(false);
+      return;
+    }
         
         try {
             setError(false)
