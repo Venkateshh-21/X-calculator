@@ -32,6 +32,7 @@ const Calc = () => {
         setDisplayResult(false)
         setResult(0)
         setVal("")
+        setError(false)
     }
     console.log(result)
 
