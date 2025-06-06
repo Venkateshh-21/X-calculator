@@ -19,7 +19,8 @@ const Calc = () => {
         try {
             setResult(eval(val))
         } catch (error) {
-            console.log(error)
+            setVal("")
+            
         }
         setDisplayResult(true)
     }
