@@ -16,7 +16,11 @@ const Calc = () => {
     }
     const generateResult=(e)=>{
         e.preventDefault()
-        setResult(eval(val))
+        try {
+            setResult(eval(val))
+        } catch (error) {
+            console.log(error)
+        }
         setDisplayResult(true)
     }
     const reset=(e)=>{
